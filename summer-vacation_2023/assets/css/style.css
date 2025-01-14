@@ -1,0 +1,133 @@
+@charset    "UTF-8";
+@import "https://unpkg.com/ress/dist/ress.min.css";
+
+*{
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    width:  100%;
+    min-width:1000px;
+    overflow-x: hidden;
+}
+
+body{
+    font-size:1.4em;
+    line-height:1;
+}
+
+/*section共通のスタイル*/
+section{
+    width:100%;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color:white;
+    text-shadow: 3px 3px 1px #333;
+}
+section:nth-of-type(odd){
+    background-attachment: fixed;
+}
+
+/*コンテンツを中央に配置するためのスタイル*/
+.inner{
+    width: 800px;
+    min-height: 300px;
+    margin: auto;
+}
+
+/*見出しと文章のスタイル*/
+h1{
+    color:white;
+    font-size: 8rem;
+    text-align: center;
+    letter-spacing: 4px;
+    text-shadow: 3px 3px 1px #333;
+}
+
+h2{
+    font-size: 4rem;
+    margin-bottom: 1em;
+}
+
+p{
+    font-size: 2.2em;
+    line-height:1.5;
+}
+
+/*画像のスタイル*/
+img{
+    max-width: 100%;
+}
+
+/*ページトップのスタイル*/
+#page-top {
+    background-image: url(../img/page-top-bg.jpg);
+    flex-wrap: wrap;
+    align-content: center;
+    margin-bottom: auto;
+}
+#page-top .my-name {
+    width: 100%;
+    text-align: center;
+    margin-top: 2em;
+    font-size: 3rem;
+}
+/* ページ01のスタイル */
+#page-01 {
+    background-image: url(../img/page-01-bg.jpg);
+    background-color: rgb(255,225,225,0.5);
+    background-blend-mode: lighten;
+}
+
+/* ページ02のスタイル */
+#page-02 {
+    background-image: url(../img/page-02-bg.jpg);
+}
+#page-02 img {
+    display: block;
+    margin-top: 20px;
+    margin-left: auto;
+    border: 1px solid #666;
+    /* 画像が大きい場合はサイズを調整 */
+    /* width: %; */
+}
+
+/* ページ03のスタイル */
+#page-03 {
+    background-image: url(../img/page-03-bg.jpg);
+    text-align: right;
+}
+
+/* ページ04のスタイル */
+#page-04 {
+    background-image: url(../img/page-04-bg.jpg);
+}
+
+/* 背景画像を薄くするスタイル　*/
+/* [0px]を任意の数字に変更 */
+
+/* #page-0x{
+    background: rgba(255,255,255,0.9);
+    text-align: right;
+    color: #333;
+    text-shadow: none;
+    position: relative;
+}
+
+#page-ox::before{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/page-0x-bg.jpg);
+    background-position: center;
+    background-size: contain;
+    filter: grayscale(100%);
+} */
